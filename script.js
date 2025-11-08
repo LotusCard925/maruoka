@@ -273,12 +273,10 @@ async function downloadContactFromModal() {
 VERSION:3.0
 FN:丸岡幹
 N:丸岡;幹;;;
-ORG:合同会社カジリバスポーツプロジェクト
-TITLE:代表/経理部長/保育園施設長
 EMAIL;TYPE=INTERNET;TYPE=WORK:kajikif.c.maruoka@gmail.com
-URL:https://www.instagram.com/kajiki.ftb/
-URL:https://line.me/ti/p/ouBCtUuNBS
-NOTE:合同会社カジリバスポーツプロジェクト/株式会社S.Bホールディングス/株式会社たじつや 代表/経理部長/保育園施設長`;
+URL:合同会社カジリバスポーツプロジェクト
+URL:株式会社SBホールディングス
+URL:株式会社たじつや`;
 
         // プロフィール画像がある場合のみ追加
         if (profileImageBase64 && profileImageBase64.length > 0) {
