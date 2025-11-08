@@ -1,4 +1,4 @@
-# LotusCard プロフィールページ
+# 丸岡幹 プロフィールページ
 
 モダンでクリーンなデザインのプロフィールページです。オレンジをテーマカラーとした、レスポンシブ対応のWebページです。
 
@@ -84,6 +84,13 @@ MIT License
 
 ## 作者
 
-LotusCard
-- GitHub: [@LotusCard925](https://github.com/LotusCard925)
-- Twitter: [@LotusCard925](https://twitter.com/LotusCard925)
+丸岡幹
+- Email: kajikif.c.maruoka@gmail.com
+- Instagram: [@kajiki.ftb](https://www.instagram.com/kajiki.ftb/)
+- LINE: [友だち追加](https://line.me/ti/p/ouBCtUuNBS)
+
+## 所属
+
+- 合同会社カジリバスポーツプロジェクト（代表）
+- 株式会社S.Bホールディングス（経理部長）
+- 株式会社たじつや（保育園施設長）

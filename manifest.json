@@ -1,7 +1,7 @@
 {
-  "name": "竹下圭一郎 - プロフィール",
-  "short_name": "竹下圭一郎",
-  "description": "国分リース株式会社/株式会社ナンニチ/ケルノ 代表取締役/常務取締役/代表 竹下圭一郎のプロフィールページ",
+  "name": "丸岡幹 - プロフィール",
+  "short_name": "丸岡幹",
+  "description": "合同会社カジリバスポーツプロジェクト/株式会社S.Bホールディングス/株式会社たじつや 代表/経理部長/保育園施設長 丸岡幹のプロフィールページ",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
@@ -9,61 +9,61 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "72x72",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "96x96",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "128x128",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "144x144",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "152x152",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "384x384",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "maskable"
     },
     {
-      "src": "7W2A7485 .jpg",
+      "src": "logo copy.jpeg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "maskable"

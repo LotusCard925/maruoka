@@ -1,12 +1,12 @@
 // Service Worker for background updates
-const CACHE_NAME = 'lotuscard-v1';
+const CACHE_NAME = 'maruoka-miki-v1';
 const urlsToCache = [
     '/',
     '/index.html',
     '/styles.css',
     '/script.js',
-    '/icon copy.jpeg',
-    '/background copy.jpeg',
+    '/logo copy.jpeg',
+    '/8B406A92-4DD9-421B-8F24-75071CBD7CC2.jpg',
     '/manifest.json'
 ];
 
@@ -60,8 +60,8 @@ function doBackgroundSync() {
 self.addEventListener('push', function(event) {
     const options = {
         body: event.data ? event.data.text() : '新しい更新があります',
-        icon: '/icon copy.jpeg',
-        badge: '/icon copy.jpeg',
+        icon: '/logo copy.jpeg',
+        badge: '/logo copy.jpeg',
         vibrate: [100, 50, 100],
         data: {
             dateOfArrival: Date.now(),
@@ -70,7 +70,7 @@ self.addEventListener('push', function(event) {
     };
 
     event.waitUntil(
-        self.registration.showNotification('守永博貴', options)
+        self.registration.showNotification('丸岡幹', options)
     );
 });
 

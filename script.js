@@ -121,13 +121,16 @@ function initSocialLinks() {
 function showContactInfo() {
     const contactInfo = `
 連絡先情報:
-📧 Email: kln.keybo@gmail.com
-📱 Phone: 090-4488-7452
-📷 Instagram: @nannichi.kirishima
-🌐 Website: 株式会社ナンニチ
+📧 Email: kajikif.c.maruoka@gmail.com
+📷 Instagram: @kajiki.ftb
+💬 LINE: https://line.me/ti/p/ouBCtUuNBS
+
+合同会社カジリバスポーツプロジェクト
+株式会社S.Bホールディングス
+株式会社たじつや
     `.trim();
     
-    createCustomModal('竹下圭一郎 - 連絡先情報', contactInfo);
+    createCustomModal('丸岡幹 - 連絡先情報', contactInfo);
 }
 
 // カスタムモーダル作成
@@ -169,10 +172,10 @@ function createCustomModal(title, content) {
     `;
 
     modalContent.innerHTML = `
-        <h3 style="color: #ff6b35; margin-bottom: 20px; font-size: 24px;">${title}</h3>
+        <h3 style="color: #9333EA; margin-bottom: 20px; font-size: 24px;">${title}</h3>
         <div style="white-space: pre-line; line-height: 1.8; color: #333; margin-bottom: 30px;">${content}</div>
         <button onclick="this.closest('.custom-modal').remove()" 
-                style="background: #ff6b35; color: white; border: none; padding: 12px 24px; 
+                style="background: #9333EA; color: white; border: none; padding: 12px 24px; 
                        border-radius: 8px; cursor: pointer; font-weight: 600;">
             閉じる
         </button>
@@ -260,7 +263,7 @@ async function downloadContactFromModal() {
         // プロフィール画像をBase64で取得（エラーが発生しても続行）
         let profileImageBase64 = '';
         try {
-            profileImageBase64 = await getImageAsBase64('7W2A7485 .jpg');
+            profileImageBase64 = await getImageAsBase64('logo copy.jpeg');
         } catch (error) {
             console.log('画像取得エラー（続行）:', error);
         }
@@ -268,12 +271,14 @@ async function downloadContactFromModal() {
         // vCardを作成
         let vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:竹下圭一郎
-N:竹下;圭一郎;;;
-EMAIL:kln.keybo@gmail.com
-TEL:09044887452
-URL:https://keiichiro-takeshita-5olw.vercel.app/
-NOTE:建設機械レンタル・販売事業・サッカーチーム運営・地域社会貢献活動`;
+FN:丸岡幹
+N:丸岡;幹;;;
+ORG:合同会社カジリバスポーツプロジェクト
+TITLE:代表/経理部長/保育園施設長
+EMAIL;TYPE=INTERNET;TYPE=WORK:kajikif.c.maruoka@gmail.com
+URL:https://www.instagram.com/kajiki.ftb/
+URL:https://line.me/ti/p/ouBCtUuNBS
+NOTE:合同会社カジリバスポーツプロジェクト/株式会社S.Bホールディングス/株式会社たじつや 代表/経理部長/保育園施設長`;
 
         // プロフィール画像がある場合のみ追加
         if (profileImageBase64 && profileImageBase64.length > 0) {
@@ -290,7 +295,7 @@ END:VCARD`;
         
         const link = document.createElement('a');
         link.href = url;
-        link.download = 'Takeshita_Keiichiro.vcf'; // 竹下圭一郎のファイル名
+        link.download = 'Maruoka_Miki.vcf'; // 丸岡幹のファイル名
         link.style.display = 'none';
         document.body.appendChild(link);
         link.click();
@@ -333,7 +338,7 @@ function showToast(message) {
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        background: #ff6b35;
+        background: #9333EA;
         color: white;
         padding: 12px 24px;
         border-radius: 8px;
@@ -503,7 +508,7 @@ function initSwipeNavigation() {
     let currentTabIndex = 0;
     
     // タブの順序を定義
-    const tabOrder = ['about', 'activities', 'achievements'];
+    const tabOrder = ['about', 'activities'];
     
     tabContent.addEventListener('touchstart', function(e) {
         startX = e.touches[0].clientX;
@@ -644,7 +649,7 @@ function enableEditMode() {
         const el = document.querySelector(element.selector);
         if (el) {
             el.contentEditable = true;
-            el.style.border = '2px dashed #ff6b35';
+            el.style.border = '2px dashed #9333EA';
             el.style.padding = '5px';
             el.style.borderRadius = '5px';
         }
