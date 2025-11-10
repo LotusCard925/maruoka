@@ -5,8 +5,8 @@ const urlsToCache = [
     '/index.html',
     '/styles.css',
     '/script.js',
-    '/logo copy.jpeg',
-    '/8B406A92-4DD9-421B-8F24-75071CBD7CC2.jpg',
+    '/シンボルとロゴタイプ.png',
+    '/Kajiki.jpeg',
     '/manifest.json'
 ];
 
@@ -60,8 +60,8 @@ function doBackgroundSync() {
 self.addEventListener('push', function(event) {
     const options = {
         body: event.data ? event.data.text() : '新しい更新があります',
-        icon: '/logo copy.jpeg',
-        badge: '/logo copy.jpeg',
+        icon: '/シンボルとロゴタイプ.png',
+        badge: '/シンボルとロゴタイプ.png',
         vibrate: [100, 50, 100],
         data: {
             dateOfArrival: Date.now(),

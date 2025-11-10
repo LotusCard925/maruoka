@@ -238,7 +238,9 @@ function getImageAsBase64(imagePath) {
                 canvas.height = canvasHeight;
                 
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-                const dataURL = canvas.toDataURL('image/jpeg', 0.8);
+                // 画像ファイルの拡張子に応じて形式を決定
+                const isPNG = imagePath.toLowerCase().endsWith('.png');
+                const dataURL = isPNG ? canvas.toDataURL('image/png') : canvas.toDataURL('image/jpeg', 0.8);
                 resolve(dataURL.split(',')[1]); // Base64部分のみを取得
             } catch (error) {
                 console.log('画像変換エラー:', error);
@@ -263,7 +265,7 @@ async function downloadContactFromModal() {
         // プロフィール画像をBase64で取得（エラーが発生しても続行）
         let profileImageBase64 = '';
         try {
-            profileImageBase64 = await getImageAsBase64('logo copy.jpeg');
+            profileImageBase64 = await getImageAsBase64('シンボルとロゴタイプ.png');
         } catch (error) {
             console.log('画像取得エラー（続行）:', error);
         }
@@ -279,7 +281,7 @@ URL:https://maruoka.vercel.app`;
         // プロフィール画像がある場合のみ追加
         if (profileImageBase64 && profileImageBase64.length > 0) {
             vCardData += `
-PHOTO;TYPE=JPEG;ENCODING=BASE64:${profileImageBase64}`;
+PHOTO;TYPE=PNG;ENCODING=BASE64:${profileImageBase64}`;
         }
 
         vCardData += `
