@@ -274,9 +274,7 @@ VERSION:3.0
 FN:丸岡幹
 N:丸岡;幹;;;
 EMAIL;TYPE=INTERNET;TYPE=WORK:kajikif.c.maruoka@gmail.com
-URL:合同会社カジリバスポーツプロジェクト
-URL:株式会社SBホールディングス
-URL:株式会社たじつや`;
+URL:https://maruoka.vercel.app`;
 
         // プロフィール画像がある場合のみ追加
         if (profileImageBase64 && profileImageBase64.length > 0) {
