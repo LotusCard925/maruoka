@@ -6,7 +6,7 @@ const urlsToCache = [
     '/styles.css',
     '/script.js',
     '/シンボルとロゴタイプ.png',
-    '/Kajiki.jpeg',
+    '/line_oa_chat_251113_052638.jpg',
     '/manifest.json'
 ];
 
