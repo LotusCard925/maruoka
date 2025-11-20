@@ -121,6 +121,7 @@ function initSocialLinks() {
 function showContactInfo() {
     const contactInfo = `
 連絡先情報:
+📱 Phone: 090-4985-4569
 📧 Email: kajikif.c.maruoka@gmail.com
 📷 Instagram: @kajiki.ftb
 💬 LINE: https://line.me/ti/p/ouBCtUuNBS
@@ -275,6 +276,7 @@ async function downloadContactFromModal() {
 VERSION:3.0
 FN:丸岡幹
 N:丸岡;幹;;;
+TEL;TYPE=CELL:09049854569
 EMAIL;TYPE=INTERNET;TYPE=WORK:kajikif.c.maruoka@gmail.com
 URL:https://maruoka.vercel.app`;
 
